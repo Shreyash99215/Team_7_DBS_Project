@@ -6,6 +6,9 @@ export const LoginPage = () => {
 
     const navigate = useNavigate();
 
+    const handleSignUp = () => {
+        navigate("/signup");
+    };
     const handleLogin = (event)=>{
         event.preventDefault();
         navigate("/dashboard");
@@ -23,6 +26,7 @@ export const LoginPage = () => {
             <a href='#'>Forget Password</a>
             <button onClick={handleLogin}>LOGIN</button>
             <button>CANCEL</button>
+            <button onClick={handleSignUp}>SIGN UP</button> {/* SignUp Button */}
         </div>
     </div>
   )
